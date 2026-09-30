@@ -1,0 +1,6 @@
+# This repository is a long-running WhatsApp bot (see Procfile / Dockerfile),
+# not an Expo web app. These settings override the build command configured
+# in the Netlify UI so the deploy publishes a static info page instead.
+[build]
+  command = "echo 'No build step required'"
+  publish = "public"
